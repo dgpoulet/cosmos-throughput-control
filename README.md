@@ -31,7 +31,8 @@ This sets up a control group, where the throughput control is configured.
  
   
  ```java
-      CosmosBulkExecutionOptions bulkoptions = new CosmosBulkExecutionOptions().setThroughputControlGroupName("localControlGroup");
+      CosmosBulkExecutionOptions bulkoptions = new CosmosBulkExecutionOptions()
+                                                        .setThroughputControlGroupName("localControlGroup");
       
       [ ... ]
       
