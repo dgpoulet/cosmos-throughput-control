@@ -25,7 +25,7 @@ This sets up a control group, where the throughput control is configured.
  
  **defaultControlGroup(**_True/False_**)** defines if this control group will be the default i.e. ANY the restrictions defined here will be applied to any operation against the container which DOESN'T have a specific control group nominated. 
  
- **container.enableLocalThroughoutControlGroup(**_Group Name_**)**  once the control group is defined, it must be enabled against the container instance we are using to run our operations.
+ **container.enableLocalThroughoutControlGroup(**_Group Configuration_**)**  once the control group is defined, it must be enabled against the container instance we are using to run our operations.
  
  Once this is done, we can define any operations as being controlled by this Throughput Control Group, and the SDK will automatically apply client-side limiting of those operations to meet the RU restriction defined:
  
